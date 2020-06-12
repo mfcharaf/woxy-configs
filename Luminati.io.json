@@ -1,0 +1,18 @@
+{
+	"General": {
+		"name": "Luminati.io",
+		"author": "Optim OS Prime",
+		"description": "Capture Credit recharges",
+		"onceEnabled": "false"
+	},
+	"Capture": [{
+		"targetEmail": "support@luminati.io",
+		"variables": [{
+			"name": "Credit added",
+			"pattern": "We've credited your account an amount of (.*?)<br>",
+			"replace1": "<br>|-",
+			"replace2": "We've credited your account an amount of |-",
+			"replace3": "-|-"
+		}]
+	}]
+}
