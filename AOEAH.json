@@ -1,0 +1,18 @@
+{
+    "General": {
+        "name": "AOEAH",
+        "author": "OptimOSPrime",
+        "description": "Captures Purchases",
+        "onceEnabled": "false"
+    },
+    "Capture": [{
+        "targetEmail": "service4@aoeah.com",
+        "variables": [{
+            "name": "\n**************************\nBy OptimOSPrime\n**************************\nOrder",
+            "pattern": "<span style=\"color:#0080ff;\">(.*)</span>",
+            "replace1": "<span style=\"color:#0080ff;\">|-",
+            "replace2": "</span>|\n**************************",
+            "replace3": "<BR>|\n"
+        }]
+    }]
+}
